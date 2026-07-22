@@ -77,8 +77,8 @@ Blend of two reference templates:
   (type-check + lint + test + build before every deploy).
 - Tech: **Vite · React 18 · TypeScript (strict) · Tailwind CSS · Three.js / @react-three/fiber ·
   React Router · Vitest**.
-- Repo: https://github.com/mutasim2004abs-create/VisSort
-- **Live: https://mutasim2004abs-create.github.io/VisSort/**
+- Repo: https://github.com/Mutasim-Abbas/VisSort
+- **Live: https://mutasim-abbas.github.io/VisSort/**
 - Category label: "Solo · 3D Visualization"
 - NOTE: VisSort's own aesthetic (dark, liquid-glass, Instrument Serif) is the north star for this
   portfolio's look — they should feel like the same designer made both.
@@ -88,7 +88,7 @@ Blend of two reference templates:
   daily calories, protein, carbs, and fat, with a diet planner that generates meal plans.
 - Aesthetic: dark theme with a gold accent (#d4af37), radial-glow background, glass cards,
   ~480px mobile app frame.
-- Tech: HTML/CSS/JavaScript (React on the repo). Repo: https://github.com/mutasim2004abs-create/Front-end
+- Tech: HTML/CSS/JavaScript (React on the repo). Repo: https://github.com/Mutasim-Abbas/Front-end
   (local build also at C:\Users\asoom\Downloads\fitmacro.html). Live link: TBD (ask user; may be
   undeployed — if so, link the repo and use screenshots).
 - Category label: "Solo · Web App"
@@ -107,7 +107,7 @@ Blend of two reference templates:
 - Discipline: Boxing (4 years)
 
 ## Links
-- GitHub: https://github.com/mutasim2004abs-create
+- GitHub: https://github.com/Mutasim-Abbas
 - LinkedIn: https://www.linkedin.com/in/mutasim-abbas-063740410/
 - Email: mutasim2004.abs@gmail.com
 

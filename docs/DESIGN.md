@@ -399,14 +399,14 @@ Eyebrow `// 03 — SELECTED WORK`. Two **sticky-stacking** star cards (§5.5), t
   - Pitch: "A cinematic, interactive sorting-algorithm visualizer built for teaching."
   - Highlights to surface as chips/metrics: **8 algorithms** · **3 views** (Columns / Array / Tree) · **Compare mode** · **Learn mode** · **239 tests (Vitest)** · **strict TypeScript** · **CI/CD (GitHub Actions)**.
   - Tech chips: Vite · React 18 · TypeScript (strict) · Tailwind · Three.js / R3F · React Router · Vitest.
-  - Live: `https://mutasim2004abs-create.github.io/VisSort/` (primary CTA). Source: `https://github.com/mutasim2004abs-create/VisSort`.
+  - Live: `https://mutasim-abbas.github.io/VisSort/` (primary CTA). Source: `https://github.com/Mutasim-Abbas/VisSort`.
   - Give VisSort the most visual weight (largest preview, the metrics row) — it is the flex.
 - **Card 02 — FitMacro**:
   - Category: `Solo · Web App`.
   - Pitch: "AI Meal Tracker — track daily calories, protein, carbs & fat with a diet planner that generates meal plans."
   - Aesthetic note echoed inside the card: **gold accent `--fitmacro-gold #D4AF37`** used only here (tech chip glow, one hairline) so the card nods to the app's real identity without breaking the global green system. Everything else stays on the green/neutral system.
   - Tech chips: HTML · CSS · JavaScript · React.
-  - CTA: Source `https://github.com/mutasim2004abs-create/Front-end`. **Live link TBD** — if undeployed, show only Source + screenshot; do not fabricate a live URL. Capture screenshot from `C:\Users\asoom\Downloads\fitmacro.html`.
+  - CTA: Source `https://github.com/Mutasim-Abbas/Front-end`. **Live link TBD** — if undeployed, show only Source + screenshot; do not fabricate a live URL. Capture screenshot from `C:\Users\asoom\Downloads\fitmacro.html`.
 
 - **Smaller uni projects (compact static grid below the stack, not stacked):** 3 glass cards `--r-lg`, 3-col desktop / 1-col mobile:
   1. **Line-Intersection Point Calculator** — geometry, `Group project`.
@@ -416,7 +416,7 @@ Eyebrow `// 03 — SELECTED WORK`. Two **sticky-stacking** star cards (§5.5), t
 
 ### 6.6 Footer / Contact
 - Big serif-italic line: "Let's build something that _stands._"
-- Links (icon + label, mono): Email `mutasim2004.abs@gmail.com` · GitHub `mutasim2004abs-create` · LinkedIn `mutasim-abbas-063740410`.
+- Links (icon + label, mono): Email `mutasim2004.abs@gmail.com` · GitHub `Mutasim-Abbas` · LinkedIn `mutasim-abbas-063740410`.
 - Copyright mono line. Repeat the central glow faintly is **not** allowed — footer stays flat/dark to close the page calmly.
 
 ---
