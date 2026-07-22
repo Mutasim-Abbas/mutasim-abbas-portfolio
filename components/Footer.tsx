@@ -65,7 +65,7 @@ export function Footer() {
               className="inline-flex min-h-[44px] items-center gap-3 label-mono text-text transition-colors hover:text-accent"
             >
               <Github size={20} strokeWidth={1.5} aria-hidden />
-              mutasim2004abs-create
+              Mutasim-Abbas
             </a>
 
             <a
