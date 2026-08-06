@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Mutasim Abbas — Software Engineer",
   description:
-    "Portfolio of Mutasim Abbas, a software engineering student. Builder of VisSort and FitMacro — precise, disciplined, cinematic engineering.",
+    "Portfolio of Mutasim Abbas, a software engineering student. Builder of VisSort and Modus — precise, disciplined, cinematic engineering.",
   keywords: [
     "Mutasim Abbas",
     "software engineer",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
     "VisSort",
-    "FitMacro",
+    "Modus",
   ],
   authors: [{ name: "Mutasim Abbas" }],
   openGraph: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "Mutasim Abbas — Software Engineer",
     description:
-      "Builder of VisSort and FitMacro. A software engineer's terminal, lit from within.",
+      "Builder of VisSort and Modus. A software engineer's terminal, lit from within.",
     siteName: "Mutasim Abbas",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mutasim Abbas — Software Engineer",
     description:
-      "Builder of VisSort and FitMacro. A software engineer's terminal, lit from within.",
+      "Builder of VisSort and Modus. A software engineer's terminal, lit from within.",
     images: ["/og.png"],
   },
   robots: { index: true, follow: true },

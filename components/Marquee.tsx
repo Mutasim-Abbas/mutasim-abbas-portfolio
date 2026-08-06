@@ -91,9 +91,9 @@ export function Marquee() {
         alt="VisSort sorting-algorithm visualizer preview"
       />
       <ShotTile
-        src={withBase("/projects/fitmacro.png")}
-        label="FitMacro"
-        alt="FitMacro meal-tracker app preview"
+        src={withBase("/projects/modus.png")}
+        label="Modus"
+        alt="Modus nutrition-tracker app preview"
       />
     </>
   );

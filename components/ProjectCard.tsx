@@ -103,7 +103,7 @@ export function ProjectCard({ project, index, total }: ProjectCardProps) {
           <span
             className="big-number leading-none text-text-muted"
             style={
-              project.gold ? { color: "var(--fitmacro-gold)" } : undefined
+              project.violet ? { color: "var(--modus-violet)" } : undefined
             }
           >
             {project.index}
@@ -125,10 +125,10 @@ export function ProjectCard({ project, index, total }: ProjectCardProps) {
                   key={t}
                   className="rounded-[12px] border border-[var(--border)] bg-card-2 px-3 py-1 label-mono text-text-body"
                   style={
-                    project.gold
+                    project.violet
                       ? {
-                          borderColor: "rgba(212,175,55,0.3)",
-                          color: "var(--fitmacro-gold)",
+                          borderColor: "rgba(167,139,250,0.3)",
+                          color: "var(--modus-violet)",
                         }
                       : undefined
                   }
@@ -146,7 +146,7 @@ export function ProjectCard({ project, index, total }: ProjectCardProps) {
                   <dd
                     className="big-number text-[clamp(2rem,1.4rem+2vw,3rem)] leading-none text-accent"
                     style={
-                      project.gold ? { color: "var(--fitmacro-gold)" } : undefined
+                      project.violet ? { color: "var(--modus-violet)" } : undefined
                     }
                   >
                     {m.value}
@@ -183,7 +183,7 @@ export function ProjectCard({ project, index, total }: ProjectCardProps) {
           <ProjectPreview
             src={project.shot}
             alt={project.shotAlt}
-            gold={project.gold}
+            violet={project.violet}
           />
         </div>
       </motion.article>

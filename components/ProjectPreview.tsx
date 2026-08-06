@@ -7,17 +7,17 @@ import { Terminal } from "lucide-react";
 type ProjectPreviewProps = {
   src: string;
   alt: string;
-  gold?: boolean;
+  violet?: boolean;
 };
 
 /**
  * Large project screenshot with an on-theme faux-terminal fallback until the
  * real capture is dropped in (§7). Never a broken image.
  */
-export function ProjectPreview({ src, alt, gold }: ProjectPreviewProps) {
+export function ProjectPreview({ src, alt, violet }: ProjectPreviewProps) {
   const [failed, setFailed] = useState(false);
-  const accent = gold ? "text-fitmacro-gold" : "text-accent-dim";
-  const bar = gold ? "rgba(212,175,55,0.3)" : "rgba(94,210,156,0.25)";
+  const accent = violet ? "text-modus-violet" : "text-accent-dim";
+  const bar = violet ? "rgba(167,139,250,0.3)" : "rgba(94,210,156,0.25)";
 
   return (
     <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[32px] border border-[var(--border)] bg-bg-elevated">

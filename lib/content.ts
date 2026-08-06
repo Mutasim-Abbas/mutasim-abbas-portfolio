@@ -31,7 +31,7 @@ export const NAV_ITEMS = [
 /** About copy — clear, professional first-person bio. */
 export const ABOUT_PARAGRAPHS: string[] = [
   "I'm Mutasim Abbas, a software engineering student focused on {web development} and building tools that solve real problems.",
-  "I work mainly in Java, Python, and C, and I build for the web with HTML, CSS, and JavaScript — with React being what I'm learning right now. My projects include VisSort, an interactive sorting-algorithm visualizer; FitMacro, a nutrition-tracking web app; and Lumina Study, a full-stack study platform where I built the API, database and authentication myself.",
+  "I work mainly in Java, Python, and C, and I build for the web with HTML, CSS, and JavaScript — with React being what I'm learning right now. My projects include VisSort, an interactive sorting-algorithm visualizer; Modus, a nutrition-tracking web app; and Lumina Study, a full-stack study platform where I built the API, database and authentication myself.",
   "I care about the details that separate code that works from code that's well made: tests, accessibility, and a clean interface. Right now I'm going deeper into AI and modern web development.",
   "I speak Arabic, Turkish, and English.",
 ];
@@ -96,7 +96,7 @@ export type Project = {
   repoUrl: string;
   shot: string;
   shotAlt: string;
-  gold?: boolean;
+  violet?: boolean;
 };
 
 export const STAR_PROJECTS: Project[] = [
@@ -128,30 +128,31 @@ export const STAR_PROJECTS: Project[] = [
   },
   {
     index: "02",
-    name: "FitMacro",
+    name: "Modus",
     category: "Solo · Web App",
     pitch:
-      "Nutrition tracker with a real macro engine (Mifflin-St Jeor), a 184-food database, local-first storage, and AI meal scanning that estimates macros from a photo.",
+      "Nutrition tracker with a real macro engine (Mifflin-St Jeor), a 184-food database, local-first storage, and AI meal scanning that estimates macros from a photo. Accounts and cross-device sync are optional — it works fully offline without one.",
     tech: [
       "Vite",
       "React 18",
       "TypeScript (strict)",
       "Tailwind",
       "PWA",
+      "Postgres",
       "Vitest",
-      "Claude API",
+      "Playwright",
     ],
     metrics: [
       { value: "184", label: "foods" },
-      { value: "317", label: "tests" },
+      { value: "877", label: "tests" },
       { value: "4", label: "macros tracked" },
     ],
-    liveUrl: "https://fit-macro-ten.vercel.app",
-    repoUrl: "https://github.com/Mutasim-Abbas/FitMacro",
-    shot: withBase("/projects/fitmacro.png"),
+    liveUrl: "https://modus-tracker.vercel.app",
+    repoUrl: "https://github.com/Mutasim-Abbas/Modus",
+    shot: withBase("/projects/modus.png"),
     shotAlt:
-      "FitMacro meal-tracker interface with a dark and gold theme showing macro totals for calories, protein, carbs and fat",
-    gold: true,
+      "Modus nutrition-tracker dashboard on a dark violet theme, showing a calorie ring, protein/carbs/fat bars and a 14-day calorie chart",
+    violet: true,
   },
   {
     index: "03",

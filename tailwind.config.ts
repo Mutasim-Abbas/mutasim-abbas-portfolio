@@ -21,7 +21,7 @@ const config: Config = {
         text: "var(--text)",
         "text-body": "var(--text-body)",
         "text-muted": "var(--text-muted)",
-        "fitmacro-gold": "var(--fitmacro-gold)",
+        "modus-violet": "var(--modus-violet)",
       },
       fontFamily: {
         display: ['"Plus Jakarta Sans"', "system-ui", "sans-serif"],

@@ -61,7 +61,7 @@ Single dark theme only. No light mode (do not half-build one). All values are ex
   --accent-glow: 0 0 40px rgba(94,210,156,0.35); /* shadow used for CTA/portrait */
 
   /* ---- Project-specific accents (used ONLY inside that project card) ---- */
-  --fitmacro-gold: #D4AF37;  /* FitMacro brand echo — its card only */
+  --modus-violet: #a78bfa;  /* Modus brand echo — its card only */
 }
 ```
 
@@ -78,7 +78,7 @@ Single dark theme only. No light mode (do not half-build one). All values are ex
 | `--accent-ink #04110B` | on `#5ED29C` fill (CTA text) | **10.3:1** | AAA |
 | `#FFFFFF` | `--card` | **18.5:1** | AAA |
 | `#B4C0BA` | `--card` | **9.9:1** | AAA |
-| `#D4AF37` (gold) | `--bg` | **9.4:1** | AAA (FitMacro card only) |
+| `#a78bfa` (violet) | `--bg` | **7.1:1** | AAA large / AA body (Modus card only) |
 
 **Color-is-never-the-only-signal rule:** the accent green always co-occurs with a shape or text cue — links are underlined on hover, the "active" nav item has an underline bar (not just green text), status/tech tags carry a label, and the hero's green period is also the largest glyph. Never rely on green alone to carry meaning (color-blind safety).
 
@@ -333,7 +333,7 @@ HERO
 
 ### 6.2 Marquee
 Full-bleed, two rows (see §5.4). **Tiles are real content only** — never demo GIFs:
-- Row A: real **project screenshot tiles** (VisSort live capture, FitMacro capture) in `--r-xl` glass tiles, each with a mono label overlay (`VisSort ↗`).
+- Row A: real **project screenshot tiles** (VisSort live capture, Modus live capture) in `--r-xl` glass tiles, each with a mono label overlay (`VisSort ↗`).
 - Row B: **tech-logo tiles** — JavaScript/TypeScript, React, Python, Java, C, Git, Vite, Three.js, Tailwind. Monochrome/accent-tinted glyphs on glass chips (`--r-md`), mono wordmark beside each.
 - Edge fade masks left/right (`mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)`).
 - Height `clamp(84px, 12vw, 140px)` per row, `gap 16px`.
@@ -401,12 +401,11 @@ Eyebrow `// 03 — SELECTED WORK`. Two **sticky-stacking** star cards (§5.5), t
   - Tech chips: Vite · React 18 · TypeScript (strict) · Tailwind · Three.js / R3F · React Router · Vitest.
   - Live: `https://mutasim-abbas.github.io/VisSort/` (primary CTA). Source: `https://github.com/Mutasim-Abbas/VisSort`.
   - Give VisSort the most visual weight (largest preview, the metrics row) — it is the flex.
-- **Card 02 — FitMacro**:
+- **Card 02 — Modus** (shipped as FitMacro; renamed 2026-08-06, and the card follows the product):
   - Category: `Solo · Web App`.
-  - Pitch: "AI Meal Tracker — track daily calories, protein, carbs & fat with a diet planner that generates meal plans."
-  - Aesthetic note echoed inside the card: **gold accent `--fitmacro-gold #D4AF37`** used only here (tech chip glow, one hairline) so the card nods to the app's real identity without breaking the global green system. Everything else stays on the green/neutral system.
-  - Tech chips: HTML · CSS · JavaScript · React.
-  - CTA: Source `https://github.com/Mutasim-Abbas/Front-end`. **Live link TBD** — if undeployed, show only Source + screenshot; do not fabricate a live URL. Capture screenshot from `C:\Users\asoom\Downloads\fitmacro.html`.
+  - Pitch: the macro engine (Mifflin-St Jeor), the 184-food database, local-first storage, and photo meal scanning. Sync is optional and the app works offline without an account — say so, because that is the actual design position.
+  - Aesthetic note echoed inside the card: **violet accent `--modus-violet #a78bfa`** used only here (tech chip glow, one hairline) so the card nods to the app's real identity without breaking the global green system. Everything else stays on the green/neutral system. This is Modus's own accent *ink* step, not its saturated fill `#8b5cf6` — that one is 4.6:1 here and fails AA as text.
+  - CTA: Live `https://modus-tracker.vercel.app`, Source `https://github.com/Mutasim-Abbas/Modus` (the public mirror; the private repo is what deploys). Screenshot captured from the live site, not a local file.
 
 - **Smaller uni projects (compact static grid below the stack, not stacked):** 3 glass cards `--r-lg`, 3-col desktop / 1-col mobile:
   1. **Line-Intersection Point Calculator** — geometry, `Group project`.
@@ -425,7 +424,7 @@ Eyebrow `// 03 — SELECTED WORK`. Two **sticky-stacking** star cards (§5.5), t
 
 - **Portraits (files not yet in repo):** build against `/public/portrait.jpg` (side-profile → Hero) and `/public/portrait-front.jpg` (front-facing → optional About). Use `next/image` with `fill` + `object-cover`. **Clearly-marked swap point:** wrap in a component `<Portrait src="/portrait.jpg" />` with a code comment `// SWAP: drop real file at /public/portrait.jpg`.
 - **Placeholder until files arrive:** a glass frame filled with `--card-2`, a centered lucide `User`/`Code2` glyph in `--accent-dim`, plus a faint `<name> // portrait pending` mono caption and the accent glow. Tasteful, on-theme, obviously intentional — never a broken-image icon, never a stock face.
-- **Project screenshots:** capture VisSort from its live URL and FitMacro from the local HTML. Store at `/public/projects/vissort.png`, `/public/projects/fitmacro.png`. Until captured, use a **coding-themed placeholder tile**: dark glass with a faux terminal/pseudocode SVG overlay in `--text-muted` + accent line highlight, labeled `preview coming soon`.
+- **Project screenshots:** capture each from its live URL. Store at `/public/projects/vissort.png`, `/public/projects/modus.png`, `/public/projects/luminastudy.png`, all 1440×900. Until captured, use a **coding-themed placeholder tile**: dark glass with a faux terminal/pseudocode SVG overlay in `--text-muted` + accent line highlight, labeled `preview coming soon`. Re-capture when a project's UI is redesigned — a card carrying the old look under the new name is worse than no shot at all.
 - **Never** use any reference template's demo assets (no "Jack" photo, no motionsites GIFs, no higgs.ai images). All imagery is Mutasim's real work or on-theme coding placeholders.
 - **Icons:** lucide-react only, `1.5px` stroke, sized `20–24px`, color `--text-body` default / `--accent` on active.
 
@@ -478,7 +477,7 @@ Every interactive element specs default / hover / active / focus / disabled.
 ## 9. Application States (loading / empty / error / success)
 
 - **Loading (route/image):** skeleton = `--card-2` block with a subtle accent shimmer sweep (`0.06` opacity, respects reduced-motion → static block). Fonts preloaded via `@fontsource` to avoid FOUT.
-- **Empty:** the site is content-driven, but design honest empty states — e.g. **FitMacro live link absent** → show only Source button + a mono note "Live deploy coming soon", never an invented URL or fake demo. **Portrait missing** → the intentional placeholder in §7. Never auto-generate fake data/screenshots to look full.
+- **Empty:** the site is content-driven, but design honest empty states — e.g. **Lumina Study has no live link** (it needs its Node server, so there is nothing to deploy statically) → show only Source button + a mono note, never an invented URL or fake demo. **Portrait missing** → the intentional placeholder in §7. Never auto-generate fake data/screenshots to look full.
 - **Error:** external link/image fails → glass card with lucide `AlertTriangle` in `--accent-dim`, mono message, and a working fallback link (e.g. repo). 404 page: dark, central glow, `404` in mono big-number, "back to start" CTA.
 - **Success (form/copy-email):** if a copy-email or contact action exists, confirm with a small glass toast, lucide `Check` in `--accent`, mono "copied" — paired with the icon (not color alone).
 
@@ -517,10 +516,10 @@ Pull the *pattern*, then re-skin to these tokens (dark bg, green accent, glass r
 
 ## 12. Non-Negotiables (frontend must not deviate)
 
-1. **One accent color** (`--accent #5ED29C`) system-wide. Gold `#D4AF37` appears **only inside the FitMacro card**. No other accent colors, no rainbow gradients.
+1. **One accent color** (`--accent #5ED29C`) system-wide. Violet `#a78bfa` appears **only inside the Modus card**. No other accent colors, no rainbow gradients.
 2. **Single dark theme.** Do not build a light mode.
 3. **Verbatim About copy** from the brief (§6.3) — no rewriting.
-4. **Real links only.** VisSort live + both repos must work. **Never fabricate a FitMacro live URL** — repo + screenshot until deployed.
+4. **Real links only.** Every live URL and repo link must resolve — re-check them whenever a project is renamed, which is exactly how this card ended up pointing at two dead 404s. Never fabricate a live URL for something undeployed.
 5. **No third-party demo assets ever** (no Jack photo, no motionsites GIFs, no higgs.ai images). Real work or on-theme coding placeholders only.
 6. **Portrait swap points** stay at `/public/portrait.jpg` + `/public/portrait-front.jpg` with intentional placeholders until files land.
 7. **AA contrast + visible focus + reduced-motion fallback + ≥44px targets** are mandatory, not optional.
