@@ -2,7 +2,7 @@
 
 High-end single-page portfolio, designed and built as a working proof of skill.
 
-**▶ Live: https://mutasim-abbas.github.io/mutasim-abbas-portfolio/**
+**▶ Live: https://mutasim-abbas-portfolio.vercel.app**
 
 ## Stack
 
@@ -24,9 +24,16 @@ npm run typecheck # tsc --noEmit
 
 ## Deployment
 
-Pushes to `main` deploy automatically to GitHub Pages via
-`.github/workflows/deploy.yml` — the pipeline type-checks, lints, and builds
-before every deploy. No environment variables, no server, no secrets.
+Pushes to `main` deploy automatically to Vercel, which type-checks and builds
+from `next.config.mjs`'s static export. No environment variables, no server, no
+secrets.
+
+Vercel is the only target. This also deployed to GitHub Pages as a project site
+until 2026-08-07, which meant a `basePath` of `/mutasim-abbas-portfolio` on that
+copy; both the second copy and the prefix are gone. The Pages copy was retired
+because its deploy job had been timing out inside GitHub's Pages backend since
+2026-07-22 while the build job kept passing, so it silently served a two-week-old
+build with nothing reporting a failure that mattered.
 
 ## Structure
 

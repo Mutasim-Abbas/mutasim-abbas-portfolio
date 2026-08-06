@@ -256,8 +256,11 @@ body {
   pointer-events: none;
   opacity: 0.04;
   mix-blend-mode: overlay;
-  /* Prefixed with the GitHub Pages project basePath (see next.config.mjs). */
-  background-image: url("/mutasim-abbas-portfolio/noise.svg");
+  /* Served from the domain root. CSS url() is not rewritten by Next's
+     basePath, so this must be a literal path that matches the deploy target
+     (see next.config.mjs) — it carried a GitHub Pages prefix until that target
+     was retired, which silently 404'd this texture on Vercel. */
+  background-image: url("/noise.svg");
   background-size: 180px 180px;
 }
 

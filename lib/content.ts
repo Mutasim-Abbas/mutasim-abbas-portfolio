@@ -7,9 +7,10 @@
  * Base path for static assets. `next/image` with `unoptimized` passes src
  * through as-is, so files in /public have to be prefixed by hand.
  *
- * Read from the environment rather than hardcoded, because the prefix differs
- * per host: GitHub Pages needs the repo name, Vercel serves from the root. The
- * value is set once in next.config.mjs so the two cannot drift apart.
+ * Read from the environment rather than hardcoded, so that if a subpath deploy
+ * target is ever added back the prefix is set once in next.config.mjs and
+ * cannot drift apart from the framework's own basePath. Vercel serves from the
+ * root, so today this resolves to an empty string.
  */
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 export const withBase = (path: string) => `${BASE_PATH}${path}`;
@@ -176,7 +177,7 @@ export const STAR_PROJECTS: Project[] = [
       { value: "SM-2", label: "review scheduler" },
     ],
     // No public demo: the app needs its Node server for accounts, sync and AI,
-    // and GitHub Pages can only serve the static frontend.
+    // which a static export of this portfolio cannot stand in for.
     liveUrl: null,
     repoUrl: "https://github.com/Mutasim-Abbas/LuminaStudy",
     shot: withBase("/projects/luminastudy.png"),

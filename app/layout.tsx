@@ -16,14 +16,16 @@ import "./globals.css";
 /**
  * Absolute base for Open Graph / Twitter card URLs. Vercel exposes the stable
  * production domain at build time, so a Vercel deploy gets the right value with
- * nothing to configure; the GitHub Pages URL remains the fallback. Set
- * NEXT_PUBLIC_SITE_URL to override (e.g. once a custom domain is attached).
+ * nothing to configure; the literal below is the fallback for builds run
+ * anywhere else, and has to stay a real reachable URL because Open Graph
+ * consumers fetch it. Set NEXT_PUBLIC_SITE_URL to override (e.g. once a custom
+ * domain is attached).
  */
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "https://mutasim-abbas.github.io/mutasim-abbas-portfolio");
+    : "https://mutasim-abbas-portfolio.vercel.app");
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

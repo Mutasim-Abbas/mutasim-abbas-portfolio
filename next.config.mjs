@@ -1,20 +1,23 @@
 /** @type {import('next').NextConfig} */
 
 /**
- * GitHub Pages serves this as a *project site*, so every asset and route has to
- * be prefixed with the repo name. Vercel serves it at the domain root, where
- * that same prefix points at paths which do not exist — the page loads but
- * every stylesheet, script and image 404s, leaving raw unstyled HTML.
+ * Vercel is the only deploy target, and it serves this at the domain root, so
+ * there is no path prefix.
  *
- * Vercel sets VERCEL=1 during its builds, so one repo deploys correctly to both
- * targets without anyone having to remember to edit this file first.
+ * There used to be one. This was a GitHub Pages *project site* as well, which
+ * is served under /<repo-name>/ and therefore needed every asset and route
+ * prefixed; the prefix was switched off by testing for Vercel's VERCEL=1. That
+ * second copy was retired on 2026-08-07 — it had been serving a stale build for
+ * two weeks because its deploy job kept timing out, and nothing detected the
+ * drift. Keeping one deploy target is the point; do not reintroduce a prefix
+ * unless a subpath deployment actually comes back.
  */
-const basePath = process.env.VERCEL ? "" : "/mutasim-abbas-portfolio";
+const basePath = "";
 
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  // Static export, served either as a GitHub Pages project site or by Vercel.
+  // Static export, served by Vercel.
   output: "export",
   basePath,
   // Exposed to client code so the manual asset prefixes in lib/content.ts
