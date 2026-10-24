@@ -107,7 +107,7 @@ export function Hero() {
               whileHover={prefersReduced ? undefined : { scale: 1.03 }}
               transition={{ type: "spring", stiffness: 200, damping: 18 }}
             >
-              <Portrait alt="Mutasim Abbas, standing by the water in a black jacket and sunglasses" />
+              <Portrait alt="Mutasim Abbas in a navy suit and burgundy tie" />
             </motion.div>
           </Magnet>
         </motion.div>
