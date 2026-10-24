@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import {
   motion,
   useScroll,
@@ -9,7 +8,7 @@ import {
   useReducedMotion,
   type MotionValue,
 } from "framer-motion";
-import { ABOUT_PARAGRAPHS, withBase } from "@/lib/content";
+import { ABOUT_PARAGRAPHS } from "@/lib/content";
 
 type WordToken = { text: string; serif: boolean; accent: boolean };
 
@@ -81,22 +80,7 @@ export function About() {
     >
       <p className="eyebrow mb-8">{"// 01 — About"}</p>
 
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,340px)_1fr] lg:items-start lg:gap-16">
-        {/* Portrait (front-facing) */}
-        <div className="glass overflow-hidden rounded-[40px] lg:sticky lg:top-28">
-          <div className="relative aspect-[4/5] w-full">
-            <Image
-              src={withBase("/portrait-front.jpg")}
-              alt="Mutasim Abbas"
-              fill
-              sizes="(max-width: 1024px) 100vw, 340px"
-              className="object-cover object-center"
-            />
-          </div>
-        </div>
-
-        {/* Text */}
-        <div ref={ref} className="max-w-[46ch]">
+      <div ref={ref} className="max-w-[46ch]">
         {paragraphs.map((tokens, pIndex) => (
           <p
             key={pIndex}
@@ -135,7 +119,6 @@ export function About() {
             })}
           </p>
         ))}
-        </div>
       </div>
     </section>
   );

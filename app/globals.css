@@ -321,30 +321,6 @@ body {
   animation: shimmer 2s infinite;
 }
 
-/* ---- Portrait crossfade (hero) ---- */
-@keyframes portraitFade {
-  0% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.portrait-fade {
-  opacity: 0;
-  animation: portraitFade 8s ease-in-out infinite;
-  will-change: opacity;
-}
-
 /* ---- Reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   html {
