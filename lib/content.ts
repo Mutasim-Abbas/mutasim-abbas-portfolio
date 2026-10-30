@@ -121,7 +121,7 @@ export const STAR_PROJECTS: Project[] = [
       { value: "3", label: "views" },
       { value: "239", label: "tests" },
     ],
-    liveUrl: "https://mutasim-abbas.github.io/VisSort/",
+    liveUrl: "https://vis-sort.vercel.app/",
     repoUrl: "https://github.com/Mutasim-Abbas/VisSort",
     shot: withBase("/projects/vissort.png"),
     shotAlt:
