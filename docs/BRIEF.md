@@ -78,7 +78,7 @@ Blend of two reference templates:
 - Tech: **Vite · React 18 · TypeScript (strict) · Tailwind CSS · Three.js / @react-three/fiber ·
   React Router · Vitest**.
 - Repo: https://github.com/Mutasim-Abbas/VisSort
-- **Live: https://mutasim-abbas.github.io/VisSort/**
+- **Live: https://vis-sort.vercel.app/**
 - Category label: "Solo · 3D Visualization"
 - NOTE: VisSort's own aesthetic (dark, liquid-glass, Instrument Serif) is the north star for this
   portfolio's look — they should feel like the same designer made both.
