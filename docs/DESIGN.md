@@ -399,7 +399,7 @@ Eyebrow `// 03 — SELECTED WORK`. Two **sticky-stacking** star cards (§5.5), t
   - Pitch: "A cinematic, interactive sorting-algorithm visualizer built for teaching."
   - Highlights to surface as chips/metrics: **8 algorithms** · **3 views** (Columns / Array / Tree) · **Compare mode** · **Learn mode** · **239 tests (Vitest)** · **strict TypeScript** · **CI/CD (GitHub Actions)**.
   - Tech chips: Vite · React 18 · TypeScript (strict) · Tailwind · Three.js / R3F · React Router · Vitest.
-  - Live: `https://mutasim-abbas.github.io/VisSort/` (primary CTA). Source: `https://github.com/Mutasim-Abbas/VisSort`.
+  - Live: `https://vis-sort.vercel.app/` (primary CTA). Source: `https://github.com/Mutasim-Abbas/VisSort`.
   - Give VisSort the most visual weight (largest preview, the metrics row) — it is the flex.
 - **Card 02 — Modus** (shipped as FitMacro; renamed 2026-08-06, and the card follows the product):
   - Category: `Solo · Web App`.
